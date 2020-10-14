@@ -1,0 +1,428 @@
+/*
+Template Name       :   Create A Website From PSD 
+Template Author     :   Yousef Alaa
+Template Version    :   1.4
+My Email            :   yousefalaa11223344@gmail.com
+Date Created        :   4/6/2020
+Last Update         :   9/10/2020
+*/
+
+/*****************************************
+Table Of Contents:
+
+01. Import Google Fonts
+02. Main Rules
+03. Preloader
+04. Nav
+05. Header
+06. 
+07. 
+08. 
+09. 
+10. 
+11. 
+12. 
+13. 
+14. 
+15. 
+16. 
+17. 
+18. 
+19. 
+20. Back To Top Button
+21. 
+22. Media Queries
+******************************************/
+
+/*
+Import Google Fonts
+===================
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+
+/*
+Main Rules
+==========
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #0f63f9;
+}
+
+body {
+    background-color: #000;
+}
+
+p {color: #7d7d7d}
+
+h1,h2,h3,h4,h5,h6 {color: #FFF}
+
+.stm {
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    border: 2px solid var(--main-color);
+    padding: 3px 15px;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.h-span {border-bottom: 2px solid var(--main-color)}
+
+/* Start Preloader */
+.preloader {
+    background: #000;position: fixed;top: 0;left: 0;
+    width: 100%;height: 100%;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;z-index: 100;
+}
+
+.sk-chase {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  -webkit-animation: sk-chase 2.5s infinite linear both;
+  animation: sk-chase 2.5s infinite linear both;
+}
+
+.sk-chase-dot {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; 
+  -webkit-animation: sk-chase-dot 2.0s infinite ease-in-out both; 
+  animation: sk-chase-dot 2.0s infinite ease-in-out both; 
+}
+
+.sk-chase-dot:before {
+  content: '';
+  display: block;
+  width: 25%;
+  height: 25%;
+  background-color: var(--main-color);
+  border-radius: 100%;
+  -webkit-animation: sk-chase-dot-before 2.0s infinite ease-in-out both;
+  animation: sk-chase-dot-before 2.0s infinite ease-in-out both; 
+}
+
+.sk-chase-dot:nth-child(1) { -webkit-animation-delay: -1.1s; animation-delay: -1.1s; }
+.sk-chase-dot:nth-child(2) { -webkit-animation-delay: -1.0s; animation-delay: -1.0s; }
+.sk-chase-dot:nth-child(3) { -webkit-animation-delay: -0.9s; animation-delay: -0.9s; }
+.sk-chase-dot:nth-child(4) { -webkit-animation-delay: -0.8s; animation-delay: -0.8s; }
+.sk-chase-dot:nth-child(5) { -webkit-animation-delay: -0.7s; animation-delay: -0.7s; }
+.sk-chase-dot:nth-child(6) { -webkit-animation-delay: -0.6s; animation-delay: -0.6s; }
+.sk-chase-dot:nth-child(1):before { -webkit-animation-delay: -1.1s; animation-delay: -1.1s; }
+.sk-chase-dot:nth-child(2):before { -webkit-animation-delay: -1.0s; animation-delay: -1.0s; }
+.sk-chase-dot:nth-child(3):before { -webkit-animation-delay: -0.9s; animation-delay: -0.9s; }
+.sk-chase-dot:nth-child(4):before { -webkit-animation-delay: -0.8s; animation-delay: -0.8s; }
+.sk-chase-dot:nth-child(5):before { -webkit-animation-delay: -0.7s; animation-delay: -0.7s; }
+.sk-chase-dot:nth-child(6):before { -webkit-animation-delay: -0.6s; animation-delay: -0.6s; }
+
+@-webkit-keyframes sk-chase {
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } 
+}
+
+@keyframes sk-chase {
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } 
+}
+
+@-webkit-keyframes sk-chase-dot {
+  80%, 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } 
+}
+
+@keyframes sk-chase-dot {
+  80%, 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } 
+}
+
+@-webkit-keyframes sk-chase-dot-before {
+  50% {
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4); 
+  } 100%, 0% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0); 
+  } 
+}
+
+@keyframes sk-chase-dot-before {
+  50% {
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4); 
+  } 100%, 0% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0); 
+  } 
+}
+
+/* End Preloader */
+
+
+/* Start Nav */
+nav {
+    background-color: #000;
+    color: #FFF;
+    border-bottom: 1px solid #282828
+}
+
+nav .navbar-brand {cursor: default}
+nav .nav-item {position: relative;margin-right: 10px}
+nav .nav-item .nav-link {color: #FFF;-webkit-transition: .5s all ease-in-out;transition: .5s all ease-in-out}
+nav .nav-item .nav-link i {color: var(--main-color);}
+
+nav .nav-link:after {
+    position: absolute;bottom: -17px;left: 0;content: "";
+    width: 0%;height: 1px;background: var(--main-color);-webkit-transition: .5s all ease-in-out;transition: .5s all ease-in-out
+}
+
+nav .navbar-toggler {border: 1px solid var(--main-color)}
+nav .navbar-toggler span {color: var(--main-color)}
+
+
+nav .active .nav-link,
+nav .nav-link:hover {color: var(--main-color);}
+nav .active .nav-link:after,
+nav .nav-link:hover:after{width: 100%;}
+
+/* End Nav */
+
+/* Start Header */
+header {padding-top: 100px;}
+header h1 {color: #FFF;font-size: 60px;margin-bottom: 15px;}
+header h1 span {color: var(--main-color);}
+header p {color: #FFF;font-size: 12px;margin-bottom: 40px;}
+header a:first-of-type {
+    background-color: var(--main-color);
+    color: #FFF;
+    margin-right: 25px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    border: 2px solid #000
+}
+header a:first-of-type:hover {background-color: #FFF;color: var(--main-color);border: 2px solid var(--main-color)}
+header a:last-of-type {color: #FFF;text-decoration: none}
+header a:last-of-type i {color: var(--main-color);}
+
+
+/* End Header */
+
+
+/* Start Business Development */
+.business {margin-top: 65px}
+.business h2 {font-weight: bold;line-height: 1.5;margin-bottom: 45px;}
+.business div div {margin-bottom: 25px}
+
+/* End Business Development */
+
+/* Start Production Area */
+.production {margin-top: 65px}
+.production h2 span 
+
+.production > a {color: var(--main-color)}
+.production > div {margin-top: 40px;margin-bottom: 60px;}
+.production .product {
+    border: 1px solid #CCC;
+    height: 350px;
+    border-radius: 3px;
+    background-color: #151515;
+    background: #151515;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 40px
+}
+
+.production .product:hover {background: linear-gradient(45deg, #0A276D 30%, #FFF, #0854FF);}
+
+.production .product h5 {margin-top: 270px;}
+.production .product a {
+    background-color: #000;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.production .product a i {color: #FFF}
+
+
+/* End Production Area */
+
+/* Start We Work */
+.we-work {background-color: #151515;padding: 80px 0;}
+.we-work h2 {}
+.we-work p {margin: 40px 0;font-size: 13px;}
+.we-work div div div {cursor: pointer;margin-top: 20px}
+.we-work div div div:hover h4 {color: var(--main-color)}
+.we-work div div div span {}
+
+/* End We Work */
+
+/* Start Digital World */
+.digital {margin-top: 65px;margin-bottom: 100px}
+.digital h2 {padding-left: 47px;margin-bottom: 45px}
+.digital p {color: #FFF;font-size: 13px;}
+.digital p span {color: var(--main-color)}
+.digital a {color: var(--main-color)}
+
+
+/* End Digital World */
+
+/* Start Big Image */
+.big-img img {width: 100%}
+/* End Big Image */
+
+/* Start Latest News */
+.latest-news {padding: 65px 0}
+.latest-news h2 {margin-bottom: 45px;padding-left: 51px;}
+.latest-news section {
+    border-left: 1px solid #0d0d0d;
+    border-right: 1px solid #0d0d0d;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer
+}
+
+.latest-news section:hover {background: #171717}
+.latest-news section:hover span {color: #FFF}
+.latest-news section:hover p:first-of-type {color: var(--main-color)}
+.latest-news section span {margin-bottom: 20px;display: inline-block;-webkit-transition: all 1s ease-in-out;transition: all 1s ease-in-out;}
+.latest-news section p:first-of-type {color: #FFF;-webkit-transition: all 1s ease-in-out;transition: all 1s ease-in-out}
+
+.latest-news .p:first-of-type {line-height: 2}
+.latest-news .p:last-of-type {margin-top: 23px}
+
+
+.latest-news section .a {margin-top: 25px;display: inline-block;}
+
+/* End Latest News */
+
+/* Start Footer */
+footer {margin-top: 75px}
+footer h2 {margin-bottom: 30px;}
+
+footer .contact {padding-bottom: 75px}
+footer section:first-of-type {}
+footer section:first-of-type p:first-of-type {color: #FFF;margin-bottom: 22px;}
+footer section:first-of-type p:last-of-type {color: #FFF;margin-top: 10px;}
+
+footer .form-control {
+    background: #000;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 20px;
+}
+
+footer .form-control:focus {
+    background: #000;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 1px solid var(--main-color);
+    margin-bottom: 20px;
+    color: #FFF
+}
+
+footer form a {
+    display: inline-block;
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: #FFF;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 7px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+footer form a:hover {background: #FFF;color: var(--main-color);}
+
+footer hr {border-top: 1px solid #CCC;}
+
+footer .copy {padding: 5px 0}
+footer .copy p {display: inline-block}
+footer .copy p span {color: var(--main-color)}
+footer .copy p:first-of-type {font-size: 11px;}
+footer .copy p:last-of-type {float: right;}
+
+/* End Footer */
+
+/* Start To Top Btn */
+
+.to-top {
+    display: block;width: 35px;height: 35px;-webkit-transition: all .5s ease-in-out;transition: all .5s ease-in-out;
+    position: fixed;bottom: -40px;right: 25px;border: 1px solid var(--main-color);
+    background: var(--main-color);color: #FFF;border-radius: 50%;text-indent: -1px;
+}
+
+.to-top:hover {background: #FFF;color: var(--main-color);}
+
+/* End To Top Btn */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+    footer .copy p {display: block;float: none !important;text-align: center}
+}
+
+
+
+
+
+@media (max-width: 767.8px) {
+    nav .nav-item {margin-bottom: 8px;}
+    nav .nav-item:last-of-type {margin-bottom: 0px;}
+    nav .nav-link:after {bottom: -5px}
+    
+    header {padding-top: 20px;}
+    header div > div:last-of-type {margin-top: 50px}
+    
+    .latest-news section {
+        padding-bottom: 25px;padding-top: 25px;margin-bottom: 35px
+    }
+    
+    footer section:last-of-type {margin-top: 35px}
+}
+
+
