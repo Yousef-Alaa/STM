@@ -1,6 +1,0 @@
-[1010/163814.487:ERROR:directory_reader_win.cc(43)] FindFirstFile: ўўэЪкаб ксь ЧсфйЧу ЧскЫцб ксь ЧсугЧб ЧсуЭЯЯ. (0x3)
-[1011/000923.487:ERROR:directory_reader_win.cc(43)] FindFirstFile: ўўэЪкаб ксь ЧсфйЧу ЧскЫцб ксь ЧсугЧб ЧсуЭЯЯ. (0x3)
-[1011/182125.622:ERROR:directory_reader_win.cc(43)] FindFirstFile: ўўэЪкаб ксь ЧсфйЧу ЧскЫцб ксь ЧсугЧб ЧсуЭЯЯ. (0x3)
-[1011/194928.128:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
-[1011/194928.175:ERROR:exception_snapshot_win.cc(99)] thread ID 2828 not found in process
-[1012/011946.142:ERROR:directory_reader_win.cc(43)] FindFirstFile: ўўэЪкаб ксь ЧсфйЧу ЧскЫцб ксь ЧсугЧб ЧсуЭЯЯ. (0x3)

@@ -1,0 +1,120 @@
+/* Start Header */
+header {padding-top: 100px;}
+header h1 {color: #FFF;font-size: 60px;margin-bottom: 15px;}
+header p {color: #FFF;font-size: 12px;margin-bottom: 40px;}
+header a:first-of-type {
+    background-color: var(--main-color);
+    color: #FFF;
+    margin-right: 25px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    border: 2px solid #000
+}
+header a:first-of-type:hover {background-color: #FFF;color: var(--main-color);border: 2px solid var(--main-color)}
+header a:last-of-type {color: #FFF;text-decoration: none}
+header a:last-of-type i {color: var(--main-color);}
+
+
+/* End Header */
+
+
+/* Start Business Development */
+.business {margin-top: 65px}
+.business h2 {font-weight: bold;line-height: 1.5;margin-bottom: 45px;}
+.business div div {margin-bottom: 25px}
+
+/* End Business Development */
+
+/* Start Production Area */
+.production {margin-top: 65px}
+
+.production > div {margin-top: 40px;margin-bottom: 60px;}
+.production .product {
+    border: 1px solid #CCC;
+    height: 350px;
+    border-radius: 3px;
+    background-color: #151515;
+    background: #151515;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 40px
+}
+
+.production .product:hover {background: linear-gradient(9deg, rgba(3,33,103,1) 20%, rgba(88,119,186,1) 58%, rgba(6,83,255,1) 95%);}
+
+.production .product h5 {margin-top: 270px;}
+.production .product a {
+    background-color: #000;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.production .product a i {color: #FFF}
+
+
+/* End Production Area */
+
+/* Start We Work */
+.we-work {background-color: #151515;padding: 80px 0;}
+.we-work h2 {}
+.we-work p {margin: 40px 0;font-size: 13px;}
+.we-work div div div {cursor: pointer;margin-top: 20px}
+.we-work div div div:hover h4 {color: var(--main-color)}
+.we-work div div div span {}
+
+/* End We Work */
+
+/* Start Digital World */
+.digital {margin-top: 65px;margin-bottom: 100px}
+.digital h2 {padding-left: 47px;margin-bottom: 45px}
+.digital p {color: #FFF;font-size: 13px;}
+
+
+/* End Digital World */
+
+/* Start Big Image */
+.big-img img {width: 100%}
+/* End Big Image */
+
+/* Start Latest News */
+.latest-news {padding: 65px 0}
+.latest-news h2 {margin-bottom: 45px;padding-left: 51px;}
+.latest-news section {
+    border-left: 1px solid #0d0d0d;
+    border-right: 1px solid #0d0d0d;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer
+}
+
+.latest-news section:hover {background: #171717}
+.latest-news section:hover span {color: #FFF}
+.latest-news section:hover p:first-of-type {color: var(--main-color)}
+.latest-news section span {margin-bottom: 20px;display: inline-block;-webkit-transition: all 1s ease-in-out;transition: all 1s ease-in-out;}
+.latest-news section p:first-of-type {color: #FFF;-webkit-transition: all 1s ease-in-out;transition: all 1s ease-in-out}
+
+.latest-news .p:first-of-type {line-height: 2}
+.latest-news .p:last-of-type {margin-top: 23px}
+
+
+.latest-news section .a {margin-top: 25px;display: inline-block;}
+
+/* End Latest News */
+
+@media (max-width: 767.8px) {
+    header {padding-top: 20px;}
+    header div > div:last-of-type {margin-top: 50px}
+    
+    .latest-news section {
+        padding-bottom: 25px;padding-top: 25px;margin-bottom: 35px
+    }
+}

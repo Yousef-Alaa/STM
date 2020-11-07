@@ -1,0 +1,113 @@
+.techno-mash p:first-child {margin-top: 30px}
+.techno-mash h1 {margin: 50px 0;}
+
+img[src="img/img-3.jpg"] {width: 100%;margin: 65px 0}
+
+/* Start Business Development */
+.business {}
+.business h2 {font-weight: bold;line-height: 1.5;margin-bottom: 45px;}
+.business div div {margin-bottom: 25px}
+
+/* End Business Development */
+
+.prod-area {margin-top: 65px;margin-bottom: 65px;}
+.prod-area > p {margin: 33px 0;}
+
+.prod-area .row div {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 60px;
+    min-height: 240px;
+    background: #161616;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    cursor: pointer
+}
+
+.prod-area .col-md-5 span {
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: var(--main-color);
+    margin: 20px 0;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+
+.prod-area .col-md-5 h4 {margin-top: 20px}
+.prod-area .col-md-5 p {margin-top: 30px;-webkit-transition: all .5s ease-in-out;transition: all .5s ease-in-out}
+
+.prod-area .row div:hover {background: linear-gradient(9deg, rgba(3,33,103,1) 20%, rgba(88,119,186,1) 58%, rgba(6,83,255,1) 95%);}
+
+.prod-area .row div:hover span {background: #7486b1}
+.prod-area .row div:hover p {color: #FFF}
+
+
+.geographical {padding-top: 65px;padding-bottom: 65px;background: #131313}
+.geographical h2 {margin-bottom: 35px;}
+.geographical > div > p {margin-bottom: 45px;}
+.geographical .number {
+    display: block;
+    font-size: 65px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.geographical .text {color: #FFF}
+.geographical .row:first-of-type {margin-bottom: 45px}
+
+
+img[alt="Big Img 2"] {width: 100%}
+
+
+.services {padding: 65px 0}
+.services h2 {margin-bottom: 65px;padding-left: 51px;}
+.services section {
+    border-left: 1px solid #0d0d0d;
+    border-right: 1px solid #0d0d0d;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer
+}
+
+.services section:hover {background: #171717}
+.services section:hover span {color: #FFF}
+.services section:hover p:first-of-type {color: var(--main-color)}
+.services section span {margin-bottom: 20px;display: inline-block;-webkit-transition: all 1s ease-in-out;transition: all 1s ease-in-out;}
+.services section p:first-of-type {color: #FFF;-webkit-transition: all 1s ease-in-out;transition: all 1s ease-in-out}
+
+.services .p:first-of-type {line-height: 2}
+.services .p:last-of-type {margin-top: 23px}
+
+
+.services section .a {margin-top: 25px;display: inline-block;}
+
+
+
+
+
+
+
+
+
+.showroom {margin-top: 65px}
+.showroom h2 {margin-bottom: 30px;}
+.showroom p {margin: 33px 0;}
+.showroom p span {display: block}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

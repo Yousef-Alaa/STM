@@ -1,0 +1,15 @@
+.our-products {
+    padding-top: 30px;
+}
+
+.our-products .row h1 {margin-top: 45px;}
+.our-products .row p {margin-top: 170px;}
+
+.choose {background: #161616}
+.choose form {
+    display: flex;
+    justify-content: space-around;
+    min-height: 100px;
+    align-items: center;
+    color: #FFF
+}
