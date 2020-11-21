@@ -13,3 +13,140 @@
     align-items: center;
     color: #FFF
 }
+
+.choose form select {
+    background: transparent;
+    color: #FFF;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 7px;
+    width: 176px;
+}
+
+.choose form select:focus,
+.choose form div input[name="search"]:focus {outline: none;}
+
+.choose form select option {
+    background: #000;
+    color: #FFF;
+    border-bottom: 1px solid #FFF;
+}
+
+.choose form div {position: relative}
+
+.choose form div input[name="search"] {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 7px;
+    padding-left: 23px;
+    color: #FFF
+}
+
+.choose form div input[name="search"] + span {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: var(--main-color);
+}
+
+.choose form button {
+    background: var(--main-color);
+    color: #FFF;
+    border-radius: 0;
+    border: 2px solid var(--main-color);
+    padding: 8px 28px;
+    transition: .5s all ease-in-out;
+}
+
+.choose form button:hover {
+    background: #FFF;
+    color: var(--main-color);
+    border-radius: 8px;
+}
+
+/* Start Product 1 */
+.prod1 {padding: 65px 0;margin-bottom: 50px}
+
+.prod1 h2 {
+        margin-bottom: 65px;
+    border-bottom: 5px solid #161616;
+    padding-bottom: 20px;
+}
+
+
+.prod1 section {margin-bottom: 25px}
+.prod1 section:first-of-type img {width: 100%;margin-bottom: 20px}
+.prod1 section:last-of-type img {margin-bottom: 23px;width: 100%}
+.prod1 section p {color: #FFF;font-weight: bold;}
+
+/* End Product 1 */
+
+
+/* Start Product 2 */
+.prod2 {padding: 65px 0;margin-bottom: 50px}
+
+.prod2 h2 {
+    margin-bottom: 65px;
+    border-bottom: 5px solid #161616;
+    padding-bottom: 20px;
+}
+
+.prod2 section {margin-bottom: 25px}
+.prod2 section img {width: 100%;margin-bottom: 25px}
+.prod2 section p {color: #FFF;font-weight: bold;}
+
+/* End Product 2 */
+
+/* Start Product 3 */
+
+.prod3 {padding: 65px 0;margin-bottom: 50px}
+
+.prod3 h2 {
+    margin-bottom: 65px;
+    border-bottom: 5px solid #161616;
+    padding-bottom: 20px;
+}
+
+/* End Product 3 */
+
+/* Start Product 2 */
+.prod4 {padding: 65px 0;margin-bottom: 50px}
+
+.prod4 h2 {
+    margin-bottom: 65px;
+    border-bottom: 5px solid #161616;
+    padding-bottom: 20px;
+}
+
+.prod4 section {margin-bottom: 25px}
+.prod4 section img {width: 100%;margin-bottom: 25px}
+.prod4 section p {color: #FFF;font-weight: bold;}
+
+/* End Product 2 */
+.page-tran p {color: #FFF;letter-spacing: 8px;display: inline-block;margin: 0 10px;cursor: default}
+.page-tran p span {cursor: pointer}
+.page-tran .prev {color: #161616;cursor: pointer}
+.page-tran .nx {color: #fff;cursor: pointer}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

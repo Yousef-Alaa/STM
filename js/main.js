@@ -1,14 +1,14 @@
-/* global document,window,setTimeout */
+/* global window,setTimeout */
 
 var
     topBtn = document.querySelector('.to-top'),
 
     preLoader = document.querySelector('.preloader'),
-    
+
     nav = document.querySelector('nav'),
-    
+
     footer = document.querySelector('footer'),
-    
+
     navContent =
     `
     <div class="container-lg">
@@ -39,7 +39,7 @@ var
     </div>
 
     `,
-    
+
     footerContent =
     `
     <div class="contact container">
@@ -84,22 +84,22 @@ window.onload = setTimeout(load, 4000);
 nav.innerHTML = navContent;
 
 if (document.title === 'STM - Home') {
-    
-        document.getElementsByClassName('nav-item')[0].classList.add('active');
-    
-    } else if (document.title === 'STM - About') {
-        
-        document.getElementsByClassName('nav-item')[1].classList.add('active');
-        
-    } else if (document.title === 'STM - Products') {
-        
-        document.getElementsByClassName('nav-item')[2].classList.add('active');
-        
-    } else if (document.title === 'STM - Contact') {
-        
-        document.getElementsByClassName('nav-item')[3].classList.add('active');
-        
-    }
+
+    document.getElementsByClassName('nav-item')[0].classList.add('active');
+
+} else if (document.title === 'STM - About') {
+
+    document.getElementsByClassName('nav-item')[1].classList.add('active');
+
+} else if (document.title === 'STM - Products') {
+
+    document.getElementsByClassName('nav-item')[2].classList.add('active');
+
+} else if (document.title === 'STM - Contact') {
+
+    document.getElementsByClassName('nav-item')[3].classList.add('active');
+
+}
 
 footer.innerHTML = footerContent;
 
@@ -111,5 +111,3 @@ window.onscroll = function () {
         topBtn.style.bottom = "-45px";
     }
 };
-
-
