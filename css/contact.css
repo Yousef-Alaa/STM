@@ -1,0 +1,56 @@
+.contacts > p {margin-top: 40px}
+.contacts h1 {margin-top: 70px}
+
+.contacts .p-befor-img {margin-top: 75px}
+.contacts .words {margin-top: 70px}
+.contacts .words section span {display: block;color: #7d7d7d}
+.contacts .words section span:nth-of-type(2) {margin-top: 41px;}
+.contacts .words section span:nth-of-type(3) {margin-top: 16px;}
+.contacts .words section span:last-of-type {margin-top: 16px;}
+.contacts .words section p {color: #FFF}
+
+@media (max-width: 767px) {
+  .contacts .words section span:nth-of-type(2) {margin-top: 90px;}
+}
+
+@media (max-width: 403px) {
+  .contacts .words section span:nth-of-type(2) {margin-top: 64px;}
+}
+
+form {margin-top: 60px}
+
+.form-control {
+    background: #000;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 20px;
+}
+
+.form-control:focus {
+    background: #000;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 1px solid var(--main-color);
+    margin-bottom: 20px;
+    color: #FFF
+}
+
+form a {
+    display: inline-block;
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: #FFF;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 7px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+form a:hover {background: #FFF;color: var(--main-color);}
+
+footer .contact {display: none;}

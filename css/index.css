@@ -84,7 +84,7 @@ header a:last-of-type i {color: var(--main-color);}
 /* End Big Image */
 
 /* Start Latest News */
-.latest-news {padding: 65px 0}
+.latest-news {padding-top: 65px;padding-bottom: : 65px}
 .latest-news h2 {margin-bottom: 45px;padding-left: 51px;}
 .latest-news section {
     border-left: 1px solid #0d0d0d;
@@ -113,7 +113,7 @@ header a:last-of-type i {color: var(--main-color);}
 @media (max-width: 767.8px) {
     header {padding-top: 20px;}
     header div > div:last-of-type {margin-top: 50px}
-    
+
     .latest-news section {
         padding-bottom: 25px;padding-top: 25px;margin-bottom: 35px
     }

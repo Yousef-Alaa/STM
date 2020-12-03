@@ -60,7 +60,7 @@ img[src="img/img-3.jpg"] {width: 100%;margin: 65px 0}
 img[alt="Big Img 2"] {width: 100%}
 
 
-.services {padding: 65px 0}
+.services {padding-top: 65px;padding-bottom: 65px}
 .services h2 {margin-bottom: 65px;padding-left: 51px;}
 .services section {
     border-left: 1px solid #0d0d0d;
@@ -70,6 +70,10 @@ img[alt="Big Img 2"] {width: 100%}
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     cursor: pointer
+}
+
+@media (max-width: 768px) {
+  .services section {margin-bottom: 25px}
 }
 
 .services section:hover {background: #171717}
@@ -96,18 +100,3 @@ img[alt="Big Img 2"] {width: 100%}
 .showroom h2 {margin-bottom: 30px;}
 .showroom p {margin: 33px 0;}
 .showroom p span {display: block}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

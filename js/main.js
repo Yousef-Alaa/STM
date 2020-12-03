@@ -1,6 +1,6 @@
 /* global window,setTimeout */
 
-var
+let
     topBtn = document.querySelector('.to-top'),
 
     preLoader = document.querySelector('.preloader'),
@@ -79,7 +79,7 @@ function load() {
     preLoader.style.display = 'none';
 }
 
-window.onload = setTimeout(load, 4000);
+window.onload = setTimeout(load, 3500);
 
 nav.innerHTML = navContent;
 
@@ -111,3 +111,8 @@ window.onscroll = function () {
         topBtn.style.bottom = "-45px";
     }
 };
+
+new WOW().init();
+
+
+console.log('Done Message');
