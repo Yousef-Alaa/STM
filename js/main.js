@@ -12,7 +12,7 @@ let
     navContent =
     `
     <div class="container-lg">
-        <a class="navbar-brand"><span class="stm">STM</span></a>
+        <a href='index.html' class="navbar-brand"><span class="stm">STM</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span><i class="fas fa-bars"></i></span>
         </button>
