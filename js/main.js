@@ -75,11 +75,10 @@ let
     `;
 
 function load() {
-    'use strict';
     preLoader.style.display = 'none';
 }
 
-window.onload = setTimeout(load, 3500);
+window.onload = setTimeout(load, 2500);
 
 nav.innerHTML = navContent;
 
@@ -113,6 +112,3 @@ window.onscroll = function () {
 };
 
 new WOW().init();
-
-
-console.log('Done Message');
